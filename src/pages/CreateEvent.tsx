@@ -156,7 +156,7 @@ const CreateEvent = () => {
           <ArrowLeft className="w-5 h-5 mr-2" />
           Retour aux événements
         </button>
-        <h1 className="text-2xl font-bold text-gray-800">Créer un événement</h1>
+        <h1 className="text-2xl font-bold text-gray-800">Publier un événement</h1>
         <p className="text-gray-600 mt-1">
           Organisez un événement pour la communauté des propriétaires d'animaux
         </p>

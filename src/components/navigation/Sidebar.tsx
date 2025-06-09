@@ -9,22 +9,24 @@ import {
   User, 
   Settings,
   LogOut,
-  Users
+  Users,
+  Wrench
 } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 import FriendsList from '../friends/FriendsList';
 
 const Sidebar = () => {
   const { user, signOut } = useAuthStore();
-  
+
   const menuItems = [
     { icon: Home, label: 'Home', path: '/' },
     { icon: Heart, label: 'Favoris', path: '/favorites' },
     { icon: Map, label: 'Discover', path: '/discover' },
     { icon: MessageCircle, label: 'Messages', path: '/messages' },
     { icon: Calendar, label: 'Events', path: '/events' },
+    { icon: Wrench, label: 'Services', path: '/services' }, // ✅ Nouvelle entrée
   ];
-  
+
   return (
     <div className="bg-white rounded-lg shadow-sm p-4 sticky top-20">
       {/* User profile */}
